@@ -1,0 +1,136 @@
+"""Crop metadata: display names, categories, and notes."""
+
+CROP_INFO: dict[str, dict] = {
+    "winter-wheat-feed": {
+        "name": "Winter Wheat (feed)",
+        "category": "arable",
+        "has_straw_option": True,
+        "notes": "Feed wheat variety. For milling wheat use winter-wheat-milling.",
+    },
+    "winter-wheat-milling": {
+        "name": "Winter Wheat (milling)",
+        "category": "arable",
+        "has_straw_option": True,
+        "notes": "Milling wheat requires extra N (+40 kg/ha) vs feed wheat.",
+    },
+    "spring-wheat": {
+        "name": "Spring Wheat",
+        "category": "arable",
+        "has_straw_option": True,
+        "notes": "",
+    },
+    "winter-barley": {
+        "name": "Winter Barley",
+        "category": "arable",
+        "has_straw_option": True,
+        "notes": "",
+    },
+    "spring-barley": {
+        "name": "Spring Barley",
+        "category": "arable",
+        "has_straw_option": True,
+        "notes": "Malting barley may need adjusted N to maintain grain nitrogen spec.",
+    },
+    "winter-oats": {
+        "name": "Winter Oats",
+        "category": "arable",
+        "has_straw_option": True,
+        "notes": "",
+    },
+    "spring-oats": {
+        "name": "Spring Oats",
+        "category": "arable",
+        "has_straw_option": True,
+        "notes": "",
+    },
+    "winter-rye": {
+        "name": "Winter Rye",
+        "category": "arable",
+        "has_straw_option": True,
+        "notes": "",
+    },
+    "winter-oilseed-rape": {
+        "name": "Winter Oilseed Rape",
+        "category": "arable",
+        "has_straw_option": False,
+        "notes": "Autumn N not usually required. Recommendations are for spring N only.",
+    },
+    "spring-oilseed-rape": {
+        "name": "Spring Oilseed Rape",
+        "category": "arable",
+        "has_straw_option": False,
+        "notes": "",
+    },
+    "linseed": {
+        "name": "Linseed",
+        "category": "arable",
+        "has_straw_option": False,
+        "notes": "",
+    },
+    "peas": {
+        "name": "Peas",
+        "category": "arable",
+        "has_straw_option": False,
+        "notes": "Nitrogen-fixing crop. No fertiliser N normally required.",
+    },
+    "field-beans": {
+        "name": "Field Beans",
+        "category": "arable",
+        "has_straw_option": False,
+        "notes": "Nitrogen-fixing crop. No fertiliser N normally required.",
+    },
+    "sugar-beet": {
+        "name": "Sugar Beet",
+        "category": "arable",
+        "has_straw_option": False,
+        "notes": "Excess N reduces sugar content. Do not exceed recommendations.",
+    },
+    "forage-maize": {
+        "name": "Forage Maize",
+        "category": "arable",
+        "has_straw_option": False,
+        "notes": "",
+    },
+    "potatoes-maincrop": {
+        "name": "Potatoes (maincrop)",
+        "category": "potatoes",
+        "has_straw_option": False,
+        "notes": "Recommendations assume no organic manure applied.",
+    },
+    "potatoes-early": {
+        "name": "Potatoes (early)",
+        "category": "potatoes",
+        "has_straw_option": False,
+        "notes": "Lower N requirement than maincrop due to shorter growing season.",
+    },
+    "potatoes-seed": {
+        "name": "Potatoes (seed)",
+        "category": "potatoes",
+        "has_straw_option": False,
+        "notes": "Lower N to control tuber size for seed production.",
+    },
+    "grass-grazed": {
+        "name": "Grass (grazed only)",
+        "category": "grassland",
+        "has_straw_option": False,
+        "notes": "Recommendations assume moderate stocking rate. N recycled via grazing.",
+    },
+    "grass-silage": {
+        "name": "Grass (silage, multi-cut)",
+        "category": "grassland",
+        "has_straw_option": False,
+        "notes": "Multi-cut silage system. High nutrient offtake.",
+    },
+    "grass-hay": {
+        "name": "Grass (hay)",
+        "category": "grassland",
+        "has_straw_option": False,
+        "notes": "Single hay cut. Moderate nutrient offtake.",
+    },
+    "grass-grazed-one-cut": {
+        "name": "Grass (grazed + 1 silage cut)",
+        "category": "grassland",
+        "has_straw_option": False,
+        "notes": "Mixed grazing and cutting system.",
+    },
+}
