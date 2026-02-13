@@ -1,0 +1,13 @@
+[project]
+name = "rb209"
+version = "0.1.0"
+description = "RB209 fertiliser recommendation calculator"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+
+[project.scripts]
+rb209 = "rb209.cli:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
